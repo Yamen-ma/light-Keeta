@@ -7,121 +7,120 @@
 
 
     <title>Keeta Scripts And Solutions jw_yamenalmanasrah</title>
-    <style>
-        body {
-            font-family: 'Amiri', 'Roboto', sans-serif;
-            font-weight:600;
-            background-color: #000;
-            color: #EAEAEA;
-            margin: 0;
-            padding: 0;
-            text-align: left;
-        }
-        .ar{
-            text-align: right !important;
-                }
-        .en{
-            text-align: left !important;
-        }
-        .cen{
-            text-align: center !important;
-        }
-        .link-button {
-            width: 80%;
-            height: 100%;
-            text-decoration: none;
-            display: inline-block;
-            background-color: #0e3f1a;
-            color: #fff;
-            padding: 7px 5px;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
+   <style>
+    body {
+        font-family: 'Amiri', 'Roboto', sans-serif;
+        font-weight:600;
+        background-color: #ffffff; /* was #000; now a light white background */
+        color: #333333; /* was #EAEAEA; now a dark grey for contrast */
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    .ar{
+        text-align: right !important;
+    }
+    .en{
+        text-align: left !important;
+    }
+    .cen{
+        text-align: center !important;
+    }
+    .link-button {
+        width: 80%;
+        height: 100%;
+        text-decoration: none;
+        display: inline-block;
+        background-color: #d4edda; /* light green background */
+        color: #155724; /* dark green text for readability */
+        padding: 7px 5px;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    .link-button:hover {
+        background-color: #c3e6cb; /* a slightly darker light green */
+        transform: translateY(-2px);
+    }
+    .link-button:active {
+        background-color: #b1dfbb; /* active state light green */
+        transform: translateY(0);
+    }
+    .tab-container {
+        margin: 5px 0;
+    }
+    .tab {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #ffffff; /* white background for tabs */
+        border: 1px solid #ccc; /* light grey border */
+        border-radius: 10px;
+        margin: 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease-out;
+    }
+    .tab:hover, .tab.active {
+        background-color: #eee; /* light grey on hover */
+        color: #b58900; /* a darker golden hue for emphasis */
+    }
+    .content {
+        display: none;
+    }
+    .content.active {
+        display: block;
+    }
+    table {
+        margin: 0;
+        border-collapse: separate;
+        width: 100%;
+        background-color: #ffffff; /* white table background */
+        color: #333333; /* dark text for table content */
+    }
+    th, td {
+        border: 2px double #ccc; /* lighter grey border for table cells */
+        border-radius: 10px;
+        padding: 7px;
+        text-align: right;
+        background-color: #ffffff; /* white background for cells */
+    }
+    td:hover {
+        background-color: #eee; /* light grey on hover */
+        color: #b58900;  /* same dark golden highlight on hover */
+        cursor: pointer;
+    }
+    .copied {
+        color: #8c7a2b; /* adjusted to a darker golden tone */
+        font-size: 19px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .highlight {
+        background-color: #ccece5 !important; /* a soft light green highlight */
+        color: #181818 !important;
+    }
+    .red{
+        color: rgb(200, 50, 50) !important; /* a deeper red */
+    }
+    .green{
+        color: #388e3c !important; /* a richer green */
+    }
+    .yellow{
+        color: #b58900 !important; /* a darker, golden yellow */
+    }
+    .blue{
+        color: #0288d1 !important; /* a deeper blue */
+    }
+    .blue2{
+        color: #3F51B5 !important; /* a darker variant of blue */
+    }
+    .purple{
+        color: #8e24aa !important; /* a richer purple */
+    }
+    .soft-white{
+        color:#665c3e; /* adjusted for better legibility on a light background */
+    }
+</style>
 
-        .link-button:hover {
-            background-color: #165c1c;
-            transform: translateY(-2px);
-        }
-
-        .link-button:active {
-            background-color: #2e4747;
-            transform: translateY(0);
-        }
-        .tab-container {
-            margin: 5px 0;
-        }
-        .tab {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #000;
-            border: 1px solid #535353;
-            border-radius: 10px;
-            margin: 0;
-            cursor: pointer;
-            transition: background-color 0.3s ease-out;
-        }
-        .tab:hover, .tab.active {
-            background-color: #444;
-            color: #FFD700;
-        }
-        .content {
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
-        table {
-            margin: 0;
-            border-collapse: separate;
-            width: 100%;
-            background-color: #242424;
-            color: #EAEAEA;
-        }
-        th, td {
-            border: 2px double #7c7d7e;
-            border-radius: 10px;
-            padding: 7px;
-            text-align: right;
-            background-color:#000;
-        }
-        td:hover {
-            background-color: #444;
-            color: #FFD700;
-            cursor: pointer;
-        }
-        .copied {
-            color: #ac9827;
-            font-size: 19px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .highlight {
-            background-color: #008141 !important;
-            color: #181818 !important;
-        }
-        .red{
-            color: rgb(252, 120, 120) !important;
-        }
-        .green{
-            color: #D5FA99  !important;
-        }
-        .yellow{
-            color: rgb(243, 243, 81) !important;
-        }
-        .blue{
-            color: rgb(82, 226, 245) !important;
-        }
-        .blue2{
-            color: rgb(142, 159, 233) !important;
-        }
-        .purple{
-            color: rgb(230, 138, 230) !important;
-        }
-        .soft-white{
-            color:#FBF4C0;
-        }
-    </style>
 </head>
 <body>
     <div class="tab-container">
