@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Roboto&display=swap" rel="stylesheet">
+
+
+    <title>Keeta Scripts And Solutions jw_yamenalmanasrah</title>
+    <style>
+        body {
+            font-family: 'Amiri', 'Roboto', sans-serif;
+            font-weight:600;
+            background-color: #000;
+            color: #EAEAEA;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        .ar{
+            text-align: right !important;
+                }
+        .en{
+            text-align: left !important;
+        }
+        .cen{
+            text-align: center !important;
+        }
+        .link-button {
+            width: 80%;
+            height: 100%;
+            text-decoration: none;
+            display: inline-block;
+            background-color: #0e3f1a;
+            color: #fff;
+            padding: 7px 5px;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #165c1c;
+            transform: translateY(-2px);
+        }
+
+        .link-button:active {
+            background-color: #2e4747;
+            transform: translateY(0);
+        }
+        .tab-container {
+            margin: 5px 0;
+        }
+        .tab {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #000;
+            border: 1px solid #535353;
+            border-radius: 10px;
+            margin: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease-out;
+        }
+        .tab:hover, .tab.active {
+            background-color: #444;
+            color: #FFD700;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        table {
+            margin: 0;
+            border-collapse: separate;
+            width: 100%;
+            background-color: #242424;
+            color: #EAEAEA;
+        }
+        th, td {
+            border: 2px double #7c7d7e;
+            border-radius: 10px;
+            padding: 7px;
+            text-align: right;
+            background-color:#000;
+        }
+        td:hover {
+            background-color: #444;
+            color: #FFD700;
+            cursor: pointer;
+        }
+        .copied {
+            color: #ac9827;
+            font-size: 19px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #008141 !important;
+            color: #181818 !important;
+        }
+        .red{
+            color: rgb(252, 120, 120) !important;
+        }
+        .green{
+            color: #D5FA99  !important;
+        }
+        .yellow{
+            color: rgb(243, 243, 81) !important;
+        }
+        .blue{
+            color: rgb(82, 226, 245) !important;
+        }
+        .blue2{
+            color: rgb(142, 159, 233) !important;
+        }
+        .purple{
+            color: rgb(230, 138, 230) !important;
+        }
+        .soft-white{
+            color:#FBF4C0;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tab active" onclick="showContent(0)">Scripts</div>
+        <div class="tab" onclick="showContent(1)">Take away</div>
+        <div class="tab" onclick="showContent(2)">Handing over</div>
+        <div class="tab" onclick="showContent(3)">Delivery issue</div>
+        <div class="tab" onclick="showContent(4)">Apology</div>
+        <br>
+        <table id="interactiveTable">
+            <tbody>
+            <tr >
+                <td style="color: #5DE2E7;border:2px #FFD700 double" class="cen">No specific request
+    </td>
+                <td style="color: #5DE2E7;border:2px #FFD700 double" class="cen">Invalid Chat
+    </td>
+<td style="color: #5DE2E7;border:2px #FFD700 double" class="cen">rider did not complete the chat with me
+    </td>
+
+            </tr>
+            </tbody>
+            </table>
+    </div>
+
+    <div class="content active" id="content-0">
+       <table id="interactiveTable">
+        <tbody>
+        <tr>
+            <td class="yellow en">Hello my friend.
+</td>
+            <td class="yellow ar">مرحبًا صديقي
+</td>
+        </tr>
+             <tr>
+            <td class="soft-white en">We sincerely apologize for the issue and will resolve it as soon as possible. Please don't worry
+</td>
+            <td class="soft-white ar">بنعتذر منك بصدق على هذه المشكله عزيزنا وبكل تاكيد رح يتم حل المشكله واتخاذ الاجراء المناسب ولا يهمك
+</td>
+        </tr>
+              <tr>
+            <td class="soft-white en">I’m sorry for any delays you've experienced, and we’re committed to resolving this as quickly as possible
+</td>
+            <td class="soft-white ar">أعتذر عن أي تأخيرات قد واجهتها، ونحن ملتزمون بحل المشكلة بأسرع وقت ممكن.
+</td>
+        </tr>
+ <tr>
+            <td class="red en">Don't worry, I will start working with you to solve the problem you're facing
+</td>
+            <td  class="red">وعليكم السلام ، انا هنا لمساعدتك
+</td>
+        </tr>
+ <tr>
+            <td class="green en">Can you please clarify your issue, sir?
+</td>
+            <td class="green">ممكن توضح مشكلتك صديقي؟
+</td>
+        </tr>
+ <tr>
+            <td  class="yellow en">Hello my friend . How can I assist you today?
+</td>
+            <td  class="yellow">وعليكم السلام، كيف أقدر أساعدك اليوم؟
+</td>
+        </tr>
+ <tr>
+            <td class="red en">Hello my friend . Im here to assist you
+</td>
+            <td class="red">مرحبًا، كيف أقدر أساعدك اليوم؟
+</td>
+        </tr>
+ <tr>
+            <td class="green en">Is this about your recent order from restaurant (1111) Number (0000)？
+</td>
+            <td class="green">نعتذر عن الازعاج، هل تقصد طلبك الاخير من مطعم (1111) رقم(0000)؟
+</td>
+        </tr>
+ <tr>
+            <td  class="yellow en"> Could you give me 1 minute to check this for you? Thanks for your patience
+</td>
+            <td  class="yellow">ممكن تعطيني دقيقة عشان أشيك لك على الموضوع؟ شكراً على صبرك.
+</td>
+        </tr>
+ <tr>
+            <td class="red en">Sorry for the inconvenience, I still need 1 minute to confirm the situation, thank you for your patience again.
+</td>
+<td class="red">نعتذر عن التأخير، أحتاج دقيقة أخرى  فقط لتأكيد الوضع، شكرًا مرة أخرى على صبركم.
+
+</td>
+        </tr>
+ <tr>
+            <td class="green en">Is there anything else I can help you with?
+</td>
+<td class="green">اي خدمه ثانيه يمكنني مساعدتك بها؟
+</tr>
+ <tr>
+            <td  class="yellow en">Thank you for contacting Keeta customer service. We appreciate it if you could take a moment to rate our service. ​Have a great day!
+</td>
+<td  class="yellow">شكراً لتواصلك مع خدمة عملاء كيتا. راح نكون شاكرين لو تقدر تأخذ لحظة لتقييم خدمتنا. شكراً لتعاونك، ونتمنى لك يوماً سعيد</td>
+</td>
+        </tr>
+ <tr>
+    <td class="red en">Hello! We still have not received your respond, our conversation will be closed very soon. If you have further inquiry please feel free to contact us. Thank you!
+</td>
+<td class="red">مرحبًا! لم نتلق ردك بعد، وسيتم إغلاق المحادثة قريبًا. إذا كان عندك أي استفسار آخر، فلا تتردد في التواصل معنا. شكرًا لك!
+</tr>
+ <tr>
+            <td class="green en">Could you allow me 1 minute to call the restaurant to confirm the issue for you, thanks for your patience
+</td>
+<td class="green">أحتاج دقيقة عشان أتواصل مع المطعم وأتأكد من المشكلة لك، شكراً على صبرك وتفهمك.</td>
+
+</td>
+        </tr>
+ <tr>
+            <td  class="yellow en">anything else i can assist you with?
+</td>
+            <td  class="yellow">اي خدمه ثانيه صديقي؟
+</td>
+        </tr>
+<tr>
+            <td class="red en">Please inform the customer to contact the customer service to cancel his order, please keep going with your order as long as its active
+
+                if the customer refuses to take the order when you deliver it please contact us
+            <td class="red">صديقي اخبر العميل يتواصل مع خدمة العملاء الخاصة به انت اكمل الطلب طالما هو لديك
+
+</td>
+        </tr>
+
+<tr>
+            <td class="green en">please be patient the order is being processed it will be canceled in a minute or soo
+</td>
+            <td class="green">يرجى التحلي بالصبر، يتم حالياً معالجة الطلب وسيتم إلغاؤه خلال دقيقة أو نحو ذلك.
+</td>
+        </tr>
+<tr>
+            <td  class="yellow en">To transfer the order: Please click on the order, then click on the "Support" button at the bottom left of the screen, and then press "transfer the order immediately."
+</td>
+            <td  class="yellow">لتحويل الطلب: يرجى الضغط على الطلب، ثم الضغط على أسفل الشاشة على اليسار على (الدعم) ثم الضغط على (إعادة تعيين الطلب فورا).
+
+</td>
+        </tr>
+<tr><th style="color:#D5FA99;padding:20px;border: 3px #D5FA99 double;padding: 0;"colspan=2 class="cen">Handling / C-Sat</th></tr>
+
+<tr>
+            <td class="blue">شاكر لك انتظارك وبعتذر عن اي تاخير  واتمنى اني ما اكون تاخرت عليك عزيزنا  
+
+</td>
+            <td class="blue">بنعتذر منك بصدق على هذه المشكله عزيزنا  وبكل تاكيد رح يتم حل المشكله واتخاذ الاجراء المناسب ولا يهمك
+
+</td>
+        </tr>
+<tr>
+            <td class="purple">بتمنى اني فدتك أخي الكريم . و شكرا لتفهمك
+
+</td>
+            <td class="purple">ما راح أتأخر عليك صديقي لك أولويتي وانتباهي الكامل
+
+</td>
+        </tr>
+<tr>
+            <td class="blue">مشكور أخي الكريم على صبرك ,بأذن الله سأرد الجميل بمساعدتك
+
+
+</td>
+            <td class="blue">نحن هنا لخدمتك  عزيزنا , اي مساعدة او استفسار اخر تبشر ؟
+
+
+</td>
+        </tr>
+<tr>
+            <td class="purple">شكراً لتواصلك مع خدمة عملاء كيتتا  . نود منك أن تأخذ لحظة لتقييم خدمتنا. شكراً لتعاونك، ونتمنى لك يوماً رائعاً
+
+
+</td>
+            <td class="purple">أول شيء، أعتذر لك جدًا عن المشكلة اللي صارت معك. إحنا دائمًا نحرص على تقديم أفضل خدمة، ومو كلنا نبغى تتعرض لمثل هالموقف.
+
+</td>
+        </tr>
+<tr>
+            <td class="blue ar">تسلم على تفهمك وتعاونك معانا
+
+
+</td>
+            <td class="blue en">I’m sorry for any delays you've experienced, and we’re committed to resolving this as quickly as possible
+
+</td>
+        </tr>
+<tr>
+            <td class="purple en">Thank you for your understanding and cooperation with us.
+
+
+</td>
+            <td class="purple en">Any other assistance or inquiry you would like, i will be happy to help?
+
+</td>
+        </tr>
+<tr>
+            <td class="blue en">I hope you leave completely satisfied, my dear brother.
+
+
+</td>
+            <td class="blue">أتمنى ما تطلع من عندي غير راضي أخي الكريم
+
+</td>
+        </tr>
+        <tr><th style="color:#D5FA99;padding:20px;border: 3px #D5FA99 double;padding: 0;"colspan=2 class="cen">Alternative confirmation</th></tr>
+
+        <tr>
+                    <td class="blue2">نعتذر على الإزعاج، هل تعني طلبك الأخير من المطعم (1111) بالرقم (0000)؟ 
+        
+        </td>
+                    <td class="blue2">نرجو منك الرد لتأكيد التفاصيل، هل تعني طلبك الأخير من المطعم (1111) برقم (0000)؟
+        
+        </td>
+                </tr>
+        <tr>
+                    <td class="blue2 en">Could this be related to your recent order from restaurant (1111) with number (0000)?   
+        
+        </td>
+                    <td class="blue2 en">Please let us know if this is regarding your recent order from restaurant (1111) with number (0000)
+        </td>
+                </tr>
+              </tbody>
+    </table>
+    <div class="copied"><img src="https://i.gifer.com/origin/db/db06c14a3148ef1e0764641c2dc1f347_w200.gif" alt="GIF" width="300" height="300" class="cen"></br><span>Copyright © 2025 Keeta Scripts And Solutions. All Rights Reserved . Yamen Al-Manasrah
+
+
+    </span>
+    </div>
+
+    </div>
+    <div class="content" id="content-1">
+        <table id="interactiveTable">
+        <tbody>
+            <tr>
+                <td class="green cen"><a href="https://km.sankuai.com/collabpage/2438757514" class="link-button green" target="_blank">Food prepared slowly KLBase</a>
+    
+    </td>
+    
+                <td class="red cen"><a href="https://km.sankuai.com/collabpage/2538942679" class="link-button red" target="_blank">Meals taken away KLBase</a>
+    
+    </td>
+    <td class="yellow cen"><a href="https://km.sankuai.com/collabpage/2508205313" class="link-button yellow" target="_blank">No order was found KLBase</a>
+    
+    
+    </td>
+    
+            </tr>
+        <tr>
+            <td class="green en">Food prepared slowly
+
+</td>
+
+            <td class="red en">Meals taken away by another one
+
+</td>
+<td class="yellow en">No order was found from Merchants
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Food prepared slowly//Guide the rider to report//inform him he can report 2 times
+
+</td>
+            <td class="red en">Meals taken away by another one//1 rider//called the merchant//no answer//cancel and compensate (25) SAR customer.-Platform is liable
+
+</td>
+<td class="yellow en">No order was found from Merchants//Not API issue//called merchant no answer//cancel and compensate (25) SAR customer.-Platform is liable
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Food prepared slowly//rider already reported once//inform him that he can report 2 times
+
+</td>
+            <td class="red en">Meals taken away by another one//2 riders//called the merchant//no answer//cancel and compensate (25) SAR customer.-1st rider liable
+
+</td>
+<td class="yellow en">No order was found from Merchants//Not API issue//called merchant answer:food is still being prepared//food prepared slowly SOP
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Food prepared slowly//Guide the rider to report//inform him that he can report 2 times//inform him that he can transfer at the 3rd report
+
+</td>
+            <td class="red en">Meals taken away by another one//3 riders//called the merchant//no answer//call 1st rider:(0000)//call 2nd rider:(0000)//cancel compensate (25) SAR//(0000) liable
+
+</td>
+<td class="yellow en">No order was found from Merchants//Not API issue//called merchant answer:food cant be prepared//cancel compensate (25) SAR merchant liable
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Food prepared slowly//Guide the rider to report//he cant report (no attempts)//Guide him to continue the delivery to avoid any violations
+
+</td>
+            <td class="red en">Meals taken away by another one//(0000) rider//called the merchan//answer (0000)//cancel and compensate (25) SAR customer.-(0000) is liable
+
+</td>
+<td class="yellow en">No order was found from Merchants//Not API issue// merchant answer:order not revieved//cancel compensate (25) SAR platform liable//escalate issue
+
+
+</td>
+
+        </tr>
+        <tr>
+            <td>
+
+</td>
+            <td>
+
+</td>
+<td  class="yellow en">No order was found from Merchants//API issue//escalated the issue and wait for TL response//no response//cancel compensate (25) SAR merchant liable
+
+
+</td>
+
+        </tr>
+        <tr><td style="color:#D5FA99;padding:20px;border: 3px #D5FA99 double;padding: 0;"colspan=3 class="cen"><a href="https://km.sankuai.com/collabpage/2385155558#b-23560f7ed7ff4db6a0ef95453fb70113" class="link-button green" target="_blank">Meals sold out/shortage KLbase</a></td></tr>
+        <tr>
+            <td class="blue en">Meals Sold out/Out of stock // i confirm the order // i call the merchant no answer // 2 rider // then i cancel the order merchant liable
+
+</td>
+            <td class="blue en">Meals Sold out/Out of stock // i confirm the order // i call the merchant and he tell me all food out of stock // then i cancel the order merchant liable  
+
+</td>
+<td class="blue en"> Meals Sold out/Out of stock // i confirm the order // i call the merchant no answer // 1 rider // tell him to transfer order   
+
+
+</td>
+<tr><th style="color:#D5FA99;padding:20px;border: 3px #D5FA99 double;padding: 0;"colspan=3 class="cen">Scripts</th></tr>
+
+        </tr>
+        <tr>
+            <td class="green en">Click "Support" and select "Long Preparation Time" at the merchant's location to report. This will extend the evaluation time.            </td>
+            <td class="red en">Thank you for your patience, after verification，the order will be canceled and the customer will receive a full refund and compensation. You can continue to accept new orders as usual. Thank you for your understanding.</td>
+            <td class="yellow en">The order will be canceled and the customer will receive a full refund and compensation. You can continue to accept new orders as usual. Thank you for your understanding.
+
+
+</td>
+
+        </tr>
+        <tr>
+            <td class="green en">You can report twice:
+
+                First report: Meet system time requirements and upload a photo with the merchant.
+                
+                Second report: Only meet system time requirements.
+                
+                Reports must be made at the merchant, and each report extends your evaluation time.</td>
+            <td class="red">شكرا على صبرك وتعاونك! بعد ما تم التحقق، الطلب تم إلغاؤه، والعميل راح يسترجع كامل المبلغ مع التعويض. تقدر تكمل في استلام الطلبات الجديدة كالمعتاد. شكرًا لتفهمك، والله يعطيك العافية!</td>
+<td class="yellow">رح يتم إلغاء الطلب، والعميل راح يحصل على استرداد كامل للمبلغ مع التعويض. تقدر تستمر في قبول الطلبات الجديدة بشكل طبيعي. نقدر تفهمك، والله يعطيك العافية
+
+</td>
+
+        </tr>
+        <tr>
+            <td class="green en">You must complete two reports. On the third attempt, when you enter "Support" > "Long Preparation Time," you'll see a system prompt to transfer the order. If you do not follow this requirement, you may generate a violation.</td>
+        <td class="blue2 en"></td>
+        <td class="blue en">Thank you for your patience, the order will be canceled and the customer will receive a full refund and compensation. You can continue to accept new orders as usual. Thank you for your understanding.</td>
+
+
+</td>
+
+        </tr>
+        
+        <tr>
+            <td class="green">اضغط على "الدعم" واختر "تأخير في تحضير الطلب" عند موقع المطعم للإبلاغ. هذا راح يمدد فترة التقييم.</td>
+        <td class="blue2"></td>
+        <td class="blue en">Thank you for your patience, Please transfer the order and you can continue to accept new orders as usual. Thank you for your understanding.</td>
+
+
+</td>
+<tr>
+    <td class="green">تقدر تبلغ مرتين.
+
+        المرة الأولى: لازم تستوفي وقت النظام وتحمل صورة مع التاجر.
+        
+        المرة الثانية: تحتاج تستوفي وقت النظام بس.
+        
+        لازم تقدم الإبلاغ عند التاجر، وكل إبلاغ يزيد وقت التقييم.</td>
+<td class="blue2"></td>
+<td class="blue">شكرًا على صبرك، الطلب راح يتم إلغاؤ هذا الطلب، والعميل راح يستلم استرجاع كامل مع تعويض. تقدر تكمل استقبال الطلبات الجديدة بشكل طبيعي. نقدّر تفهّمك، وشكرًا لك</td>
+
+
+</td>
+
+</tr>
+<tr>
+    <td class="green">لازم تكمل إبلاغين. في المحاولة الثالثة، اضغط على "الدعم" > "تأخير في تحضير الطلب"، بيطلع لك تنبيه من النظام لنقل الطلب.
+
+        إذا ما اتّبعت هذه الخطوات ممكن يصير فيه مخالفة</td>
+<td class="blue2"></td>
+<td class="blue">شكرًا على صبرك، من فضلك قم بتحويل الطلب وتقدر تكمل استقبال الطلبات الجديدة كالمعتاد. نقدر تفهّمك، وشكرًا لك</td>
+
+
+</td>
+
+</tr>
+        </tr>
+              </tbody>
+    </table>
+    <div class="copied" id="copiedMessage"></div>
+
+    </div>
+    <div class="content" id="content-2">
+        <table id="interactiveTable">
+        <tbody>
+            <tr>
+                <td class="green cen"><a href="https://km.sankuai.com/collabpage/2389057536#b-6f648ea7208b4668a1a9518e51248057" class="link-button green" target="_blank">Unable to contact the customer</a>
+    </td>
+    
+                <td class="yellow cen"><a href="https://km.sankuai.com/collabpage/2438357146" class="link-button yellow" target="_blank">Address updated by customer</a>
+    
+    </td>
+    
+            </tr>
+        <tr>
+            <td class="green en">Unable to contact the customer
+
+</td>
+
+            <td class="yellow en">Address updated by customer
+
+
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Unable to contact the customer//guide the rider to report and wait//fail : keep trying to contact if no answer leave the food and send photos to the customer
+
+
+</td>
+            <td class="yellow en">Address updated by customer//Ask the courier to report "Customer Wrong Pin"//Ask courier to provide customer's actual location//its (25) KM//ask him to continue the delivery to avoid violations
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Unable to contact the customer//guide the rider to report and wait//success : leave the food and send photos to the customer
+
+
+</td>
+            <td class="yellow en">Address updated by customer//Ask the courier to report "Customer Wrong Pin"//Ask courier to provide customer's actual location//its (25) KM//ask him if he can deliver//yes : thank him and end
+
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Unable to contact the customer//order completed
+
+</td>
+            <td class="yellow en">Address updated by customer//Ask the courier to report "Customer Wrong Pin"//Ask courier to provide customer's actual location//its (25) KM//ask him if he can deliver//no : tell him to leave the food and send photos to the customer
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td>
+
+</td>
+            <td class="yellow en">Address updated by customer//Ask the courier to report "Customer Wrong Pin"//Ask courier to provide customer's actual location//its (25) KM//tell him to leave the food and send photos to the customer
+
+
+</td>
+
+        </tr>
+        <tr><th style="color:#D5FA99;padding:20px;border: 3px #D5FA99 double;padding: 0;"colspan=3 class="cen">Scripts</th></tr>
+
+        <tr>
+            <td class="green en">Please report the abnormality of "Unable to contact the customer" in the rider APP and wait for results. Thanks for your understanding. 
+
+
+</td>
+
+            <td class="yellow en">Please click "Support", and report "Customer Wrong Pin" first at the order location.  If there is a violation later, it will be appealed automatically.
+
+
+
+
+</td>
+
+        </tr><tr>
+            <td class="green en">If the report fails, please try to contact the customer through both phone and IM tool. If you succeed in contacting the customer, please complete the order as normal. Thanks for your understanding. 
+
+
+
+</td>
+
+            <td class="yellow en">When reporting, please provide the customer's address and photo proof. It is recommended to include real photos of the area near the order location and records of communication where the customer provided the actual address.
+
+
+
+
+</td>
+
+        </tr><tr>
+            <td class="green en">If you still cannot contact the customer, please send a picture to the customer put the food in the customer's order address, and click to confirm "Arrived at customer". Thanks for your understanding. 
+
+</td>
+
+            <td class="yellow en">Share a screenshot of the customer's new location on Google Maps, showing the distance from their old location.
+
+
+
+
+</td>
+
+        </tr>
+        <tr>
+            <td class="green en">If the report is successful, please send a picture to the customer through the IM tool, and put the food in the customer's order address, and click to confirm "Arrived at customer". Thanks for your understanding. 
+
+</td>
+
+            <td class="yellow en">Since the customer's new address is nearby, please continue the delivery to avoid any violations. Thank you!
+
+
+
+
+</td>
+
+        </tr>
+        <tr>
+            <td class="green">يرجى الإبلاغ عن الحالة "أعجز عن الاتصال بالعميل" عبر تطبيق السائق وانتظار النتائج
+
+                شكرًا لتفهمك!
+
+</td>
+
+            <td class="yellow">الرجاء الضغط على "الدعم" والإبلاغ عن "رقم التعريف الشخصي الخاطئ للعميل" في موقع الطلب. ذا صار في مخالفة بعدين، راح ينرفض تلقائيًا.
+
+
+
+
+</td>
+
+        </tr> <tr>
+            <td class="green">إذا فشل الإبلاغ، حاول التواصل مع العميل عبر الهاتف وأداة المحادثة الداخلية. إذا تمكنت من التواصل مع العميل، يُرجى إكمال الطلب كالمعتاد. شكرًا لتفهمك!
+
+
+</td>
+
+<td class="yellow">عند الإبلاغ، يرجى تقديم عنوان العميل وإثبات بالصورة. يُفضل إدراج صور حقيقية للمنطقة القريبة من موقع الطلب وسجلات الاتصالات اللي فيها قدم العميل العنوان الفعلي
+
+
+
+</td>
+
+        </tr> <tr>
+            <td class="green">إذا لم تتمكن من التواصل مع العميل، قم بالتقاط صورة للطعام وهو في العنوان الخاص بالعميل، ثم اضغط على "وصلت على العميل". شكرًا لتفهمك!
+
+
+</td>
+
+<td class="yellow">شارك لقطة شاشة لموقع العميل الجديد على خرائط جوجل، توضح المسافة من موقعه السابق.
+
+
+
+
+</td>
+
+        </tr> <tr>
+            <td class="green">إذا تم الإبلاغ بنجاح، أرسل صورة للعميل عبر أداة المحادثة الداخلية، وضع الطعام في عنوان الطلب الخاص بالعميل، ثم اضغط على "وصلت على العميل". شكرًا لتفهمك!
+
+
+</td>
+
+<td class="yellow">نظرًا لقرب عنوان العميل الجديد، يرجى الاستمرار في التوصيل عشان تتجنب أي مخالفات. شكرًا لك!
+
+
+
+</td>
+
+        </tr>
+              </tbody>
+    </table>
+
+    <div class="copied" id="copiedMessage"></div>
+
+    </div>
+    <div class="content" id="content-3">
+       <table id="interactiveTable">
+        <tbody>
+            <tr>
+                <td class="green cen">        <a href="https://km.sankuai.com/collabpage/2385330120#b-22e6db4ce4074e8da76e6cf333f7713d" class="link-button green" target="_blank">Traffic Jam KLbase</a>
+
+    
+    </td>
+    
+                <td class="red cen">        <a href="https://km.sankuai.com/collabpage/2385330120#b-3d027a2566214bbbb21e621309760b01" class="link-button red" target="_blank">Traffic accidents KLbase</a>
+
+    
+    </td>
+    <td class="yellow cen">        <a href="https://km.sankuai.com/collabpage/2438481343" class="link-button yellow" target="_blank">Unable to deliver KLbase</a>
+
+    
+    
+    </td>
+    
+            </tr><tr>
+                <td class="green en">Traffic Jam
+    
+    </td>
+    
+                <td class="red en">Traffic accidents
+    
+    </td>
+    <td class="yellow en">Unable to deliver due to personal reasons
+    
+    
+    </td>
+    
+            </tr>
+ <tr>
+            <td class="green en">Traffic Jam//soothe rider//guide him to report//wiling to continue//thank and end
+
+</td>
+            <td class="red en">Traffic accidents//show embathy//ask rider if he can continue//he can//thank him andd end
+
+</td>
+<td class="yellow en">Unable to deliver due to personal reasons//try to make rider continue//cant continue//not picked up//guide him to transfer and keep evedince
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Traffic Jam//soothe rider//guide him to report//unwilling to continue//picked up//cancel compensate (25) SAR rider liable
+
+</td>
+            <td class="red en">Traffic accidents//show embathy//ask rider if he can continue//he cant//picked up//cancel compensate (25) SAR rider liable
+
+</td>
+<td class="yellow en">Unable to deliver due to personal reasons//try to make rider continue//can continue//thank him and guide him to keep evedince
+
+</td>
+
+        </tr>
+ <tr>
+            <td class="green en">Traffic Jam//soothe rider//guide him to report//unwilling to continue//not picked up//guide the rider to transfer order and keep evedince
+
+</td>
+            <td class="red en">Traffic accidents//show embathy//ask rider if he can continue//he cant//not picked up//Tell him to transfer the order and keep photos of the accident for future appeals
+
+</td>
+<td class="yellow en">Unable to deliver due to personal reasons//ask rider if he can continue//he cant//picked up//cancel compensate (25) SAR rider liable
+
+
+
+</td>
+
+        </tr>
+ <tr>
+            <td>
+</td>
+            <td class="red en">Traffic accidents//show embathy//injured//not picked up//Tell him to transfer the order and keep photos of the accident for future appeals
+
+</td>
+<td>
+
+
+</td>
+
+        </tr>
+        <tr><th style="color:#D5FA99;padding:20px;border: 3px #D5FA99 double;padding: 0;"colspan=3 class="cen">Scripts</th></tr>
+        <tr>
+            <td class="green en">I'm very sorry for the inconvenience caused to you, I will do my best to assist you; 
+</td>
+            <td class="red en">We are so sorry to hear that, are you in good health?
+
+</td>
+<td class="yellow en">Ok, can you please continue to deliver?</td>
+
+        </tr><tr>
+            <td class="green en">Please report first in the rider APP and try your best to complete the order delivery, to ensure that consumers receive the meal as soon as possible; 
+</td>
+<td class="red en">We are so sorry to hear that, are you in good health?
+
+</td>
+<td class="yellow en">Please transfer the order, send accident photos to me, and keep the photos as evidence for any future appeals. Kind reminder: Multiple cancellations of the task order will generate account suspension for 3 days and deduction. Please try to complete the delivery as much as possible. If violations occur after transferring orders, you can keep relevant evidence and appeal afterward. Please always follow Keeta's "Delivery Service Guidelines" and aim to provide the best service to our customers.</td>
+
+
+        </tr><tr>
+            <td class="green en">Please keep the relevant evidence, which can be used for appeal in case of violations in the future.
+</td>
+<td class="red en">Ok, can you please continue to deliver?
+
+</td>
+<td class="yellow en">I will assist in canceling the order for the customer. Please inform the customer that the delivery cannot continue, send accident photos to me, and keep the photos as evidence for any future appeals. Kind reminder: Based on the latest platform control rules, you will be charged the full order amount and your account will be blocked for 3 hours after the order is canceled.  Please always follow Keeta's "Delivery Service Guidelines" and aim to provide the best service to our customers.</td>
+
+
+        </tr><tr>
+            <td class="green">أنا آسف جداً على الإزعاج اللي حصل لك، وسأبذل قصارى جهدي لمساعدتك.
+</td>
+<td class="red en">Please transfer the order, send accident photos to me, and keep the photos as evidence for any future appeals. Kind reminder: Multiple cancellations of the task order will generate account suspension for 3 days and deduction. Please try to complete the delivery as much as possible. If violations occur after transferring orders, you can keep relevant evidence and appeal afterward. Please always follow Keeta's "Delivery Service Guidelines" and aim to provide the best service to our customers.
+
+</td>
+<td class="yellow">طيب، هل في إمكانكية لإكمال التوصيل؟</td>
+
+
+        </tr><tr>
+            <td class="green">يرجى منك الإبلاغ أولاً في تطبيق السائق وبذل قصارى جهدك لإتمام توصيل الطلب، لضمان وصول الطعام للمستهلك في أسرع وقت ممكن.
+</td>
+<td class="red en">I will assist in canceling the order for the customer. Please inform the customer that the delivery cannot continue, send accident photos to me, and keep the photos as evidence for any future appeals. Kind reminder: Based on the latest platform control rules, you will be charged the full order amount and your account will be blocked for 3 hours after the order is canceled.  Please always follow Keeta's "Delivery Service Guidelines" and aim to provide the best service to our customers.
+</td>
+<td class="yellow">رجى نقل الطلب، وإرسال صور الحادث لي، والاحتفاظ بالصور كدليل لأي اعتراضات مستقبليّة.تذكير مهم: قد يؤدي إلغاء طلب المهمة عدة مرات إلى تعليق الحساب لمدة 3 أيام وخصم.حاول إتمام التوصيل قدر الإمكان. إذا حدثت مخالفات بعد نقل الطلبات، يمكنك الاحتفاظ بالأدلة ذات الصلة وتقديم استئناف بعد ذلك.
+
+    يرجى دائمًا اتباع "إرشادات خدمة التوصيل" الخاصة بـ كيتا والحرص على تقديم أفضل خدمة لعملائنا. شكراً لتفهمك.</td>
+
+        </tr><tr>
+            <td class="green">يرجى الاحتفاظ بالأدلة المتعلقة، لأنها ستكون مفيدة في حالة الاستئناف في حال حدوث مخالفات في المستقبل.
+</td>
+<td class="red">نعتذر عن اللي صار، طمنّي عليك، أنت بخير؟
+
+</td>
+<td class="yellow">أنا رح أساعد في إلغاء الطلب للعميل. من فضلك بلغ العميل إن التوصيل ما رح يكمل، وأرسل لي صور الحادث، وخلك محتفظ بالصور كدليل لأي استئنافات مستقبلية. تذكير بسيط: حسب القوانين الجديدة للمنصة، رح يتم خصم المبلغ الكامل للطلب وحسابك رح يُحظر لمدة 3 ساعات بعد ما يتم إلغاء الطلب.
+
+    يرجى دائمًا اتباع "إرشادات خدمة التوصيل" الخاصة بـ كيتا والحرص على تقديم أفضل خدمة لعملائنا. شكراً لتفهمك.</td>
+
+
+        </tr>
+        <tr>
+            <td class="green"></td>
+            <td class="red">طيب، هل في إمكانكية لإكمال التوصيل؟</td>
+            <td class="yellow"></td>
+        </tr>
+        <tr>
+            <td class="green"></td>
+            <td class="red">رجى نقل الطلب، وإرسال صور الحادث لي، والاحتفاظ بالصور كدليل لأي اعتراضات مستقبليّة.تذكير مهم: قد يؤدي إلغاء طلب المهمة عدة مرات إلى تعليق الحساب لمدة 3 أيام وخصم. حاول إتمام التوصيل قدر الإمكان. إذا حدثت مخالفات بعد نقل الطلبات، يمكنك الاحتفاظ بالأدلة ذات الصلة وتقديم استئناف بعد ذلك.
+
+                يرجى دائمًا اتباع "إرشادات خدمة التوصيل" الخاصة بـ كيتا والحرص على تقديم أفضل خدمة لعملائنا. شكراً لتفهمك.</td>
+            <td class="yellow"></td>
+        </tr>
+        <tr>
+            <td class="green">
+
+            </td>
+            <td class="red">أنا رح أساعد في إلغاء الطلب للعميل. من فضلك بلغ العميل إن التوصيل ما رح يكمل، وأرسل لي صور الحادث، وخلك محتفظ بالصور كدليل لأي استئنافات مستقبلية. تذكير بسيط: حسب القوانين الجديدة للمنصة، رح يتم خصم المبلغ الكامل للطلب وحسابك رح يُحظر لمدة 3 ساعات بعد ما يتم إلغاء الطلب.
+
+                يرجى دائمًا اتباع "إرشادات خدمة التوصيل" الخاصة بـ كيتا والحرص على تقديم أفضل خدمة لعملائنا. شكراً لتفهمك.</td>
+                <td class="yellow"></td>
+        </tr>
+
+              </tbody>
+    </table>
+
+    <div class="copied" id="copiedMessage"></div>
+
+    </div>
+    <div class="content" id="content-4">
+        <table id="interactiveTable">
+         <tbody>
+         <tr>
+             <td class="yellow en">I understand how that could be upsetting, I sorry for hearing that
+ </td>
+             <td class="yellow ar">أنا آسف جدًا لسماع ذلك.
+ </td>
+         </tr>
+  <tr>
+             <td class="red en">I can imagine how that feels
+ </td>
+             <td  class="red">لا بد أن ذلك كان محبطًا بالنسبة لك.
+ </td>
+         </tr>
+  <tr>
+             <td class="green en">I completely understand your concern.
+ </td>
+             <td class="green">أتفهم تمامًا قلقك.
+ </td>
+         </tr>
+  <tr>
+             <td  class="yellow en">I truly understand how this situation could be frustrating for you.
+ </td>
+             <td  class="yellow">أتفهم تمامًا كيف يمكن أن تكون هذه الحالة محبطة بالنسبة لك.
+ </td>
+         </tr>
+  <tr>
+             <td class="red en">I sincerely apologize for the inconvenience you've experienced.
+ </td>
+             <td class="red">أعتذر بصدق عن الإزعاج الذي واجهته.
+ </td>
+         </tr>
+  <tr>
+             <td class="green en">We understand your concern and are here to assist you.
+ </td>
+             <td class="green"> نتفهم قلقك ونحن هنا لدعمك.
+ </td>
+         </tr>
+  <tr>
+             <td  class="yellow en">Thank you for bringing this to our attention, we appreciate your feedback
+ </td>
+             <td  class="yellow">شكرًا لإبلاغنا بهذه المشكلة, نُقدّر ملاحظاتك.
+ </td>
+         </tr>
+  <tr>
+             <td class="red en">I understand how important this is to you, and I’ll do my best to help
+ </td>
+ <td class="red">أدرك مدى أهمية هذا الأمر بالنسبة لك، وسأبذل قصارى جهدي للمساعدة
+ 
+ </td>
+         </tr>
+  <tr>
+             <td class="green en">Please rest assured that your concern is being taken seriously.
+ </td>
+ <td class="green">يرجى التأكد من أن مشكلتك تؤخذ على محمل الجد.
+ </tr>
+  <tr>
+             <td  class="yellow en">We value your time and patience, and we’re working to resolve this promptly.
+ </td>
+ <td  class="yellow">نحن نُقدّر وقتك وصبرك، ونعمل على حل المشكلة بأسرع وقت</td>
+ </td>
+         </tr>
+  <tr>
+     <td class="red en">Your experience matters to us, and we apologize for any inconvenience caused.
+ </td>
+ <td class="red">تجربتك تهمنا، ونعتذر عن أي إزعاج تم التسبب به.
+ </tr>
+  <tr>
+             <td class="green en">I understand where you're coming from, and I’m here to assist you.
+ </td>
+ <td class="green">أنا أفهم ما تقصده، وأنا هنا لمساعدتك.</td>
+ 
+ </td>
+         </tr>
+  
+     </div>
+    <div class="copied" id="copiedMessage"></div>
+    <div class="copied" id="copiedMessage"></div>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+        const copiedMessage = document.getElementById('copiedMessage');
+
+        // Function to switch tabs
+        function showContent(index) {
+            tabs.forEach((tab, i) => {
+                tab.classList.toggle('active', i === index);
+                contents[i].classList.toggle('active', i === index);
+            });
+        }
+
+        // Add functionality for click-to-copy
+        document.body.addEventListener('click', (event) => {
+            if (event.target.tagName === 'TD') {
+                navigator.clipboard.writeText(event.target.innerText)
+                    .then(() => {
+                        // Add highlight to the clicked cell
+                        event.target.classList.add('highlight');
+
+                        // Display a copied message
+                        copiedMessage.innerText = "Copied: " + event.target.innerText;
+
+                        // Remove highlight and message after a short delay
+                        setTimeout(() => {
+                            event.target.classList.remove('highlight');
+                            copiedMessage.innerText = "";
+                        }, 600);
+                    })
+                    .catch(err => alert("Failed to copy: " + err));
+            }
+        });
+    </script>
+</body>
+</html>
